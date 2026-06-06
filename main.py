@@ -3,7 +3,7 @@ from mysite.api import user, category, subcategory, product, product_image, revi
 import uvicorn
 from mysite.admin.setup import setup_admin
 
-shop_app = fastapi.FastAPI(title='Store project')
+shop_app = fastapi.FastAPI(title='Store_app')
 shop_app.include_router(user.user_router)
 shop_app.include_router(category.category_router)
 shop_app.include_router(subcategory.subcategory_router)

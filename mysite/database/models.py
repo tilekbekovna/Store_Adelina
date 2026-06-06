@@ -1,4 +1,3 @@
-from email.policy import default
 from .db import Base
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import Integer, String, Enum, Date, ForeignKey, Text, Boolean, DateTime
@@ -20,7 +19,7 @@ class UserProfile(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     first_name: Mapped[str] = mapped_column(String(30))
     last_name: Mapped[str] = mapped_column(String(50))
-    username: Mapped[str] = mapped_column(String, unique=True)
+    username: Mapped[str] = mapped_column(String(50), unique=True)
     email: Mapped[str] = mapped_column(String, unique=True)
     password: Mapped[str] = mapped_column(String)
     age: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
