@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NurkulFastapi.iml" filepath="$PROJECT_DIR$/.idea/NurkulFastapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/store_app_nur.iml" filepath="$PROJECT_DIR$/.idea/store_app_nur.iml" />
     </modules>
   </component>
 </project>
